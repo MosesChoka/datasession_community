@@ -1,2 +1,53 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custom.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=PT+Sans:ital@1&family=Poppins:wght@600&family=Roboto+Slab:wght@200;400&family=Work+Sans:wght@100&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="/" class="logo">
+                <img src="/images/data-logo.png" alt="DataSessions">
+            </a>
+            <ul class="header-nav nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Jobs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="big-hero">
+        <div class="main-hero">
+                <img src="/images/hero-img.png" alt="Learning" class="hero-image">
+        </div>
+
+        <div class="hero-content">
+            <p class="big-intro">
+                Fuel Your Future With<br>
+                <span>Data Mastery</span>. Join Our <br> 
+                Community Now !
+            </p>
+   
+            <p class="small-intro">
+                Stay Ahead With Cutting-Edge Data Tools <br>
+                Connect, Learn, and Grow With Us.
+            </p>
+        </div>
+
+        <button  class="sign-btn">Sign Up</button>
+    
+    </div>
+
+    
+</body>
+</html>
