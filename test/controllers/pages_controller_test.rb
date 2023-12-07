@@ -3,7 +3,7 @@ require "test_helper"
 class PagesControllerTest < ActionDispatch::IntegrationTest
  
   def setup
-    @base_title = "DataSessions, For Data Enthusiasts"
+    @base_title = "DataSessions"
   end
 
   test "should get root" do
@@ -14,7 +14,7 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get pages_home_url
     assert_response :success
-    assert_select "title", "Home | #{@base_title}"
+    assert_select "title", "#{@base_title}"
   end
 
   test "should get about" do
