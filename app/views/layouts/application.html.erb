@@ -8,25 +8,12 @@
     <meta charset="utf-8">
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <!--[if 1t IE 9]>
-      <script src="//cdnjs.cloudfare.com/ajax/libs/html5shiv/r29/html5.min.js">
-      </script>
-    <![endif]-->
+    <%= render 'layouts/shim' %>
 
   </head>
 
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "DataSessions", '#' %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %>
-            <li><%= link_to "About",  '#' %>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
     </div>
