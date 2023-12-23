@@ -1,20 +1,20 @@
 <% provide(:title, 'Sign up') %>
 <h1>Sign Up</h1>
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
+<div class="row field form-group">
+  <div class="col-md-6 col-md-offset-3 field form-group">
     <%= form_with(model: @user) do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+      <%#= f.label :name %>
+      <%= f.text_field :name, class:"form-control", placeholder:"enter your name" %>
 
-      <%= f.label :email %>
-      <%= f.email_field :email %>
+      <%#= f.label :email %>
+      <%= f.email_field :email, class:"form-control", placeholder:"email address" %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+      <%#= f.label :password %>
+      <%= f.password_field :password, class:"form-control", placeholder:"password" %>
 
-      <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation %>
+      <%#= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, class:"form-control", placeholder:"confirm password" %>
 
       <%= f.submit "Create my account", class:"btn btn-primary" %>
     <% end %>
