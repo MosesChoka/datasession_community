@@ -11,27 +11,26 @@
 </head>
 
 <body>
-  <div class="center jumbotron">
-    <div class="big-hero">
-      <div>
-        <%= link_to image_tag("hero-img.webp", alt:"Learning", class: "rounded float-end")%>
-        </div>
-        <div class="hero-content">
+  <div class="jumbotron">
+  <div class="big-hero">
 
-            <p class="big-intro">
-                Fuel Your Future With<br>
-                <span>Data Mastery</span>. Join Our <br> 
-                Community Now !
-            </p>
-   
-            <p class="small-intro">
-                Stay Ahead With Cutting-Edge Data Tools <br>
-                Connect, Learn, and Grow With Us.
-            </p>
-        </div>
-
-        <%= link_to "Sign Up", signup_path, class: "btn btn-lg btn-primary" %>
+    <div class="hero-content">
+      <p class="big-intro">
+        Fuel Your Future With<br>
+        <span>Data Mastery</span>. Join Our <br> Community Now ! 
+      </p>
+      <p class="small-intro">
+        Stay Ahead With Cutting-Edge Data Tools <br>
+         Connect, Learn, and Grow With Us.
+      </p> 
+      <%= link_to "Sign Up", signup_path, class: "sign-btn" %> 
     </div>
+
+    <div class="hero_image">
+      <%#= link_to image_tag("hero-img.webp", alt:"Learning")%>
+    </div>
+
+  </div>
   </div>
     
 </body>
